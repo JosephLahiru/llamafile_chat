@@ -31,7 +31,7 @@ echo "Current directory: $(pwd)"
 echo "Running Docker container with the following command:"
 echo "docker run -p 8080:8080 -v \"$(pwd)/model:/usr/src/app/model\" llamafile_image --server --host 0.0.0.0 -m \"/usr/src/app/model/$model_filename\""
 
-docker run -p 8080:8080 \
+docker run -p 5000:8080 \
     -v "$(pwd)/model:/usr/src/app/model" \
     llamafile_image \
     --server \
